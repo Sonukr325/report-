@@ -3,8 +3,15 @@ const app = require("express")();
 const express = require("express")();
 const puppeteer = require("puppeteer");
 
-
-app.get("/",  async (req, res)  => {
+app.get("/api",  async (req, res)  => {
+ 
+ res.json({
+  ret:0
+  });
+ 
+ 
+ });
+app.get("/api",  async (req, res)  => {
 const url = "https://www.midasbuy.com/adyen/pk/buy/pubgm"
 
  const MOBILE_USERAGENTx = agent.randomAgent();

@@ -1,7 +1,7 @@
 const app = require("express")();
 
 const express = require("express")();
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-core");
 
 app.get("/api",  async (req, res)  => {
  
